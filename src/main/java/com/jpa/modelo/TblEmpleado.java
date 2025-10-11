@@ -1,5 +1,10 @@
 package com.jpa.modelo;
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> cbf14af0e3ae6b332c057c9906d65671a7dc0194
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -11,6 +16,7 @@ import javax.persistence.Temporal;
 
 import org.eclipse.persistence.internal.jpa.parsing.TemporalLiteralNode.TemporalType;
 
+<<<<<<< HEAD
 @Entity //ejemplo de JPA....
 @Table(name="tbl_empleado") //ejemplo de JPA.....
 public class TblEmpleado {
@@ -18,6 +24,15 @@ public class TblEmpleado {
 	//declaramos los atributos...
 	@Id  //ejemplo de  JPA....
 	@GeneratedValue(strategy=GenerationType.IDENTITY) //ejemplo de JPA....
+=======
+@Entity
+@Table(name="tbl_empleado") //ejemplo de JPA.....
+public class TblEmpleado {
+	
+	//declaramos los atributos
+	@Id //Ejemplo de JPA
+	@GeneratedValue(strategy=GenerationType.IDENTITY) //Ejemplo de JPA
+>>>>>>> cbf14af0e3ae6b332c057c9906d65671a7dc0194
 	private int idempleado;
 	private String nombre;
 	private String apellido;
@@ -25,9 +40,18 @@ public class TblEmpleado {
 	private String email;
 	private String sexo;
 	private String telf;
+<<<<<<< HEAD
 	//anotacion para fecha....
 	//@Temporal(TemporalType.DATE)
 	private Date fechanac;
+=======
+	//Anotacion para fecha...
+	//@Temporal(TemporalType.DATE)
+	private Date fechanac;
+	
+	
+	
+>>>>>>> cbf14af0e3ae6b332c057c9906d65671a7dc0194
 	public int getIdempleado() {
 		return idempleado;
 	}
@@ -76,6 +100,11 @@ public class TblEmpleado {
 	public void setFechanac(Date fechanac) {
 		this.fechanac = fechanac;
 	}
+<<<<<<< HEAD
+=======
+	
+	
+>>>>>>> cbf14af0e3ae6b332c057c9906d65671a7dc0194
 	public TblEmpleado(int idempleado, String nombre, String apellido, String dni, String email, String sexo,
 			String telf, Date fechanac) {
 		//super();
@@ -87,14 +116,30 @@ public class TblEmpleado {
 		this.sexo = sexo;
 		this.telf = telf;
 		this.fechanac = fechanac;
+<<<<<<< HEAD
 	} //fin del constructor...
 	public TblEmpleado() {
 		//super();
 	} //fin del constructor....
+=======
+		
+	} //fin del constructor
+	
+	//Constructor vacio
+	
+	public TblEmpleado() {
+		//super();
+	}
+>>>>>>> cbf14af0e3ae6b332c057c9906d65671a7dc0194
 	
 	
 	
 	
 	
 	
+<<<<<<< HEAD
 } //fin de la clase....
+=======
+	
+} // fin de la clase...
+>>>>>>> cbf14af0e3ae6b332c057c9906d65671a7dc0194
